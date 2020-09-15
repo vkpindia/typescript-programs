@@ -1,3 +1,3 @@
 var uname = 'Scott';
 var str = "Welcome to " + uname;
-alert(str);
+console.log(str);
