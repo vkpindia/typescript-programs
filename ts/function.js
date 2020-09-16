@@ -31,3 +31,17 @@ function courseDetails(csid, cname, duration) {
     console.log('duration', duration);
 }
 courseDetails(56, 'Angular');
+function addition() {
+    var x = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        x[_i] = arguments[_i];
+    }
+    var sum = 0;
+    x.map(function (item) {
+        sum += item;
+    });
+    console.log('Addition:', sum);
+}
+addition(10, 40, 60, 80, 30, 67, 89);
+addition(10, 40, 60);
+addition(10, 40);

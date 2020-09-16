@@ -3,9 +3,9 @@ let sname: string = 'Smith';
 let course: string = 'Angular 10';
 var isFeePaid: boolean = true;
 
-var studentRecord: any = {
+var studentRecord: { sid: number, sname: string } = {
     sid: 1024,
-    sname: 'Smith'
+    sname: 'Smith',
 };
 
 var subject: Array<string> = [
@@ -22,7 +22,7 @@ var subject_1: string[] = [
     'Tamil'
 ];
 
-var students: Array<any> = [
+var students: Array<{ sid: number, sname: string }> = [
     {
         sid: 1024,
         sname: 'Smith'
@@ -40,7 +40,7 @@ var students: Array<any> = [
 var employees: [number, string, boolean] = [1, 'Steve', true];
 employees.push(2, 'Bill', false);
 
-employees.map(emp=>{
+employees.map(emp => {
     console.log('emp', emp);
 });
 
